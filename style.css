@@ -1,0 +1,285 @@
+body{
+    color: rgb(62, 57, 57);
+}
+.logo{
+    width:80px;
+    height: 80px;
+}
+.center{
+    text-align: center;
+    margin: 40px;
+}
+.title{
+    background: url("https://cdn.shopify.com/s/files/1/0141/5242/t/16/assets/fitsix-4-bright_LIQo.jpg?v=162012172235") center/cover no-repeat;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow:black 2px 2px 5px;
+}
+.title button{
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 15px;
+    background: #ff4b2b;
+    cursor: pointer;
+    transition:ease 0.3s;
+    box-shadow:0 0 15px #e66048;
+}
+.title button:hover{
+    background: rgb(218, 39, 39);
+}
+section{
+    padding: 60px 20px;
+    margin: auto;
+}
+#about{
+    background: url("https://images.pexels.com/photos/685530/pexels-photo-685530.jpeg?cs=srgb&dl=pexels-victorfreitas-685530.jpg&fm=jpg") center/cover no-repeat;
+    position: relative;
+    padding: 140px 10%;
+    overflow: hidden;
+}
+.aboutcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.bigg{
+    position: absolute;
+    font-size: 160px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.1);
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+.aboutconti{
+    flex: 0 0 55%;
+}
+.titleabout{
+    color: #ff4b2b;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#about h2{
+    font-size: 52px;
+    margin: 25px 0;
+    line-height: 1.2;
+    color: white;
+}
+#about h2 strong{
+    color: #ff4b2b;
+}
+#about p{
+    font-size: 18px;
+    line-height: 1.7;
+    color:rgb(203, 200, 200);
+    max-width: 480px;
+}
+.aboutstat{
+    flex-direction: column;
+    margin-top:40px ;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+}
+
+@media screen and (max-width:900px){
+    .aboutcont{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .bigg{
+        font-size: 100px;
+        left: -10px;
+    }
+}
+.serv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.servbox{
+    background: rgb(214, 210, 210);
+    flex: 1 1 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.servbox:hover{
+    transform: translateY(-10px);
+    background: #e1dede;
+}
+.trainercontain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.trainer{
+    background-color: rgb(229, 227, 227);
+    flex:1 1 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: ease 0.3s;
+}
+.trainer:hover{
+    transform: translateY(-10px);
+    background: #e1dede;
+}
+
+.trainer img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius:50% ;
+    margin-bottom: 15px;
+}
+@media(max-width:768px){
+    .serv, .trainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+#contact input, #contact textarea, #contact button{
+    padding: 10px;
+    border-radius: 5px;
+    border: black solid 1px;
+    font-size: 1rem;
+}
+#contact button{
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+#contact button:hover{
+    background-color: #9d3d2c;
+}
+.containmoves{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin-top: 40px;
+
+}
+.move{
+    background-color: rgb(229, 227, 227);
+    padding: 50px;
+    border-radius: 10px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 80px;
+}
+.move img{
+    width:100%;
+    max-width: 200px;
+    display: none;
+    height: 100px;
+    object-fit: contain;
+}
+#pushup{
+    display: block;
+}
+#weighted{
+    display: block;
+}
+#squats{
+     display: block;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.buttons svg{
+    width: 36px;
+    height: 36px;
+}
+.move p{
+    font-size: 30px;
+    font-weight: bold;
+}
+@media (max-width:900px){
+    .containmoves{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:500px){
+    .containmoves{
+        grid-template-columns: 1fr;
+    }
+}
+
+.plancontain{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.plan{
+    background: #e1dede;
+    padding: 25px;
+    width: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.plan:hover{
+    transform: translateY(-10px);
+}
+.plan h3{
+    margin-bottom: 10px;
+}
+.pricing{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.plan ul{
+    list-style: none;
+    padding: 0;
+}
+.plan li{
+    margin: 8px 0;
+}
+.chooseplan{
+    margin-top: 20px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    padding: 12px;
+    border-radius:10px;
+}
+#preloader{
+    background: rgb(250, 244, 244) url(avocado\ preloader.gif) no-repeat center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#contacth2, #memberh2, #moveh2, #trainh2, #planh2,#pabout,#abouth2{
+    color: rgb(62, 57, 57);
+}
