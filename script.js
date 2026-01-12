@@ -144,28 +144,29 @@ window.addEventListener("load",function(){
     document.getElementById("preloader").style.display="none";
 })
 
-let dark=false;
+let light=false;
 
 document.getElementById("dark").addEventListener("click",function(){
-    if (dark){
+    if (light){
         document.body.style.background="white";
         document.body.style.color="rgb(62, 57, 57)";
-        document.getElementById("pabout").style.color="rgb(62, 57, 57)";
         document.getElementById("planh2").style.color="rgb(62, 57, 57)";
         document.getElementById("trainh2").style.color="rgb(62, 57, 57)";
         document.getElementById("moveh2").style.color="rgb(62, 57, 57)";
         document.getElementById("memberh2").style.color="rgb(62, 57, 57)";
         document.getElementById("contacth2").style.color="rgb(62, 57, 57)";
+        document.getElementById("feedtitly").style.color="rgb(62, 57, 57)";
     }else{
         document.body.style.background="#181C14";
-        document.getElementById("pabout").style.color="white";
         document.getElementById("planh2").style.color="white";
         document.getElementById("trainh2").style.color="white";
         document.getElementById("moveh2").style.color="white";
         document.getElementById("memberh2").style.color="white";
         document.getElementById("contacth2").style.color="white";
+        document.getElementById("feedtitly").style.color="white";
+
 }
-dark=!dark
+    light=!light
 })
 
 
@@ -220,3 +221,19 @@ expert.addEventListener("click",function(){
     beginner.style.cursor="not-allowed";
     beginner.innerHTML="can't downgrade";
 })
+
+
+const track=document.querySelector(".carouseltr");
+const cards= Array.from(track.children);
+
+let place=0;
+ const cardwidth=cards[0].offsetWidth;
+//i used some help on this part cuz i tried doing it in a different way but it didn't work out
+
+setInterval(()=>{
+    place++;
+    if (place>=cards.length) {
+        place=0;
+    }
+    track.style.transform=`translateX(-${place * cardwidth}px)`
+},5000)

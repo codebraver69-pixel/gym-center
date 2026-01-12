@@ -283,3 +283,45 @@ section{
 #contacth2, #memberh2, #moveh2, #trainh2, #planh2,#pabout,#abouth2{
     color: rgb(62, 57, 57);
 }
+.feedbacksec{
+    padding: 60px 20px;
+    text-align: center;
+}
+.feedtitle{
+    font-size:2.5rem;
+    margin-bottom: 40px;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+.carousel{
+    max-width: 350px;
+    margin: auto;
+}
+.carouseltr{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.feedbackcard{
+    background-color: #ff4b2b;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding:25px;
+    min-width: 300px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.feedbacktext{
+    font-size: 1rem;
+    color: blakc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.feedbackname{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(33, 33, 33);
+}
+.feedrole{
+    font-size: 0.9rem;
+    color: black;
+}
