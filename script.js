@@ -156,6 +156,7 @@ document.getElementById("dark").addEventListener("click",function(){
         document.getElementById("memberh2").style.color="rgb(62, 57, 57)";
         document.getElementById("contacth2").style.color="rgb(62, 57, 57)";
         document.getElementById("feedtitly").style.color="rgb(62, 57, 57)";
+        document.getElementById("shoph2").style.color="rgb(62, 57, 57)";
     }else{
         document.body.style.background="#181C14";
         document.getElementById("planh2").style.color="white";
@@ -164,6 +165,7 @@ document.getElementById("dark").addEventListener("click",function(){
         document.getElementById("memberh2").style.color="white";
         document.getElementById("contacth2").style.color="white";
         document.getElementById("feedtitly").style.color="white";
+        document.getElementById("shoph2").style.color="white";
 
 }
     light=!light
@@ -237,3 +239,22 @@ setInterval(()=>{
     }
     track.style.transform=`translateX(-${place * cardwidth}px)`
 },5000)
+
+document.querySelectorAll(".proteins").forEach( card=>{
+    let minus=card.querySelector(".minus");
+    let plus=card.querySelector(".plus");
+    let outputnum=card.querySelector(".numquantity");
+    let buybtn=card.querySelector(".buysupple");
+    let num=1;
+    plus.addEventListener("click", function(){
+        num++;
+        outputnum.innerHTML=num;
+    });
+    minus.addEventListener("click", function(){
+        num--;
+        outputnum.innerHTML=num;
+    });
+    buybtn.addEventListener("click",function(){
+        alert(`you've purchased ${num} items.`)
+    });
+});

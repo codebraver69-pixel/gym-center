@@ -325,3 +325,72 @@ section{
     font-size: 0.9rem;
     color: black;
 }
+.supplecontain{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+.proteins{
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+}
+.proteins img{
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.proteins h3{
+    margin: 10px 0;
+}
+.suppledesc{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.proteinprice{
+    display: block;
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.proteinbtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+}
+.quantity{
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.numquantity{
+    text-align: center;
+    font-size: 16px;
+    min-width: 20px;
+}
+.buysupple{
+    background-color: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+.buysupple:hover{
+    background-color:#9b2814 ;
+}
